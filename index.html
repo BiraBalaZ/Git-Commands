@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <title>Git Commands</title>
+</head>
+<body>
+    <header>
+        <button id="toggle-mode">Dark Mode</button>
+        <h1>Git Commands</h1>
+    </header>
+    <main>
+        <button class="back-to-top" id="backToTopBtn">^</button>
+        <h2>Comandos do Git</h2>
+        <p>Aqui iremos abordar os principais comandos do git para iniciar um repositório e commitar os arquivos.</p>
+
+        <hr>
+
+        <h2>Como Criar um Repositório</h2>
+        <h3>1. Abra o terminal na pasta do projeto</h3>
+        <p>Digite o seguinte comando:</p>
+        <pre class="cmd"><code>git <mark class="command">init</mark></code></pre>
+        <p>Isso irá criar a pasta <mark class="command">.git</mark> que fica oculta na pasta do projeto.</p>
+
+        <h3>2. Adicionando os Itens ao Commit</h3>
+        <p>Use o comando git <mark class="command">status</mark> para verificar as pastas que não foram adicionadas</p>
+        <pre class="cmd"><code>git <mark class="command">status</mark></code></pre>
+        <p>Isso mostrará os arquivos em vermelho.</p>
+        <pre class="cmd"><code>git <mark class="command">add .</mark></code></pre>
+        <p>Esse comando com o "." no final adiciona TODOS os arquivos do projeto ao commit. Digitar o comando <mark class="command">git status</mark> novamente mostrará as pastas, que anteriormente estavam vermelhas, agora na cor verde</p>
+
+        <h3>3. Colocando a Mensagem do Commit</h3>
+        <pre class="cmd"><code>git <mark class="command">commit -m</mark> "mensagem do seu commit"</code></pre>
+
+        <h3>4. Colocando na Branch do Projeto</h3>
+        <pre class="cmd"><code>git <mark class="command">branch commit -M main</mark></code></pre>
+
+        <h3>5. Estabelecendo Conexão com o Repositório</h3>
+        <pre class="cmd"><code>git <mark class="command">remote add origin link_do_repositorio</mark></code></pre>
+
+        <h3>6. Enviando para o Repositório</h3>
+        <pre class="cmd"><code>git <mark class="command">push -u origin main</mark></code></pre>
+
+        <hr>
+        <h2>Como enviar os próximos commits?</h2>
+        <p>Vamos supor que você já tenha um repositório. Esse mesmo, fez o primeiro commit e agora quer fazer alterações e subir elas para o repo. Iremos utilizar quase todos os comandos anteriores:</p>
+
+        <h3>1. Adicionando os Itens ao Commit</h3>
+        <pre class="cmd"><code>git <mark class="command">add .</mark></code></pre>
+
+        <h3>2. Colocando a Mensagem do Commit</h3>
+        <pre class="cmd"><code>git <mark class="command">commit -m</mark> "mensagem do seu commit"</code></pre>
+
+        <h3>3. Enviando para o Repositório</h3>
+        <pre class="cmd"><code>git <mark class="command">push</mark></code></pre>
+    </main>
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/BiraBalaZ">Erick Monteiro</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+</html>
